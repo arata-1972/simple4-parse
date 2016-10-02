@@ -14,9 +14,9 @@ if (!databaseUri) {
 var api = new ParseServer({
   databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
-  appId: process.env.APP_ID || 'myAppId',
-  masterKey: process.env.MASTER_KEY || '', //Add your master key here. Keep it secret!
-  serverURL: process.env.SERVER_URL || 'http://localhost:1337/parse',  // Don't forget to change to https if needed
+  appId: process.env.APP_ID || 'PJGh686wADXdRboLLmbkER0V4D95wlLVatRJXUl0',
+  masterKey: process.env.MASTER_KEY || '4t5Y7WU5lShBRzNz4SeT1gbXxqfABGRvH0T8bL3c', //Add your master key here. Keep it secret!
+  serverURL: process.env.SERVER_URL || 'https://night-market--taiwan.herokuapp.com/parse',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   }

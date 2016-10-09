@@ -1,6 +1,6 @@
 
-Parse.Cloud.define('hello', function(req, res) {
-  res.success('Hi');
+Parse.Cloud.define('currentTime', function(req, res) {
+  res.success(""+new Date().getTime());
 });
 
 

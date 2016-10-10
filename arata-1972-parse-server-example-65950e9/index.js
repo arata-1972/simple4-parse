@@ -22,8 +22,8 @@ var api = new ParseServer({
   }
          "push": {
     "android": {
-      "senderId": "GCMのSender-ID",
-      "apiKey":"GCMのAPI KEY"
+      "senderId": "Sender-ID",
+      "apiKey":"API KEY"
     },
     "ios": {
       "pfx": "/Users/arata1972/Documents/iPhoneP12/com.satoshogoTranslate-Chinese store.p12",

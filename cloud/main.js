@@ -4,10 +4,6 @@ Parse.Cloud.define('currentTime', function(req, res) {
 });
 
 
-Parse.Cloud.define('progress', function(req, res) {
-  res.success('progressVisible');
-});
-
 Parse.Cloud.define('hello', function(req, res) {
  res.success('hi');
 });

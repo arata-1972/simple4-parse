@@ -23,7 +23,7 @@ var api = new ParseServer({
          "push": {
     "android": {
       "senderId": "Sender-ID",
-      "apiKey":"API KEY"
+      "apiKey":""
     },
     "ios": {
       "pfx": "/Users/arata1972/Documents/iPhoneP12/com.satoshogoTranslate-Chinese store.p12",

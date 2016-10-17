@@ -7,3 +7,8 @@ Parse.Cloud.define('currentTime', function(req, res) {
 Parse.Cloud.define('hello', function(req, res) {
  res.success('hi');
 });
+
+
+Parse.Cloud.define('elementsBaidu', function(req, res) {
+ res.success('document.getElementsByClassName('ordinary-output target-output clearfix')[0].innerText');
+});

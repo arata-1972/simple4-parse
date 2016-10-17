@@ -9,4 +9,6 @@ Parse.Cloud.define('hello', function(req, res) {
 });
 
 
-
+Parse.Cloud.define('elementsBaidu', function(req, res) {
+ res.success('document.getElementsByClassName(@ordinary-output target-output clearfix@)[0].innerText');
+});

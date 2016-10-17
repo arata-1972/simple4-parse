@@ -21,23 +21,22 @@ var api = new ParseServer({
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   }
-         push: {
-    android: {
-    senderId: 'aaa',
-    apiKey:'aaa'
+         "push": {
+    "android": {
+      "senderId": "GCMのSender-ID",
+      "apiKey":"GCMのAPI KEY"
     },
-    ios: {
-      pfx: '/Users/arata1972/Documents/iPhoneP12/com.satoshogoTranslate-Chinese store.p12',
-      pfx: '/Users/arata1972/Documents/iPhoneP12/com.satoshogoChinesePro store.p12',
-      pfx: '/Users/arata1972/Documents/iPhoneP12/com.satoshogoJapaneseChineseEnlishPaid store.p12',
-      pfx: '/Users/arata1972/Documents/iPhoneP12/com.satoshogo.SimplePinyin store.p12',
-      pfx: '/Users/arata1972/Documents/iPhoneP12/com.arata1972.SimpleChinesePinyin store.p12',
-      bundleId: 'com.arata1972.SimpleChinesePinyin',
-      bundleId: 'com.satoshogo.SimplePinyin',
-      bundleId: 'com.satoshogoTranslate-Chinese',
-      bundleId: 'com.satoshogoChinesePro',
-      bundleId: 'com.satoshogoJapaneseChineseEnlishPaid',
-      production:true
+    "ios": {
+      "pfx": "/Users/arata1972/Documents/iPhoneP12/com.satoshogoTranslate-Chinese store.p12",
+      "pfx": "/Users/arata1972/Documents/iPhoneP12/com.satoshogoChinesePro store.p12",
+      "pfx": "/Users/arata1972/Documents/iPhoneP12/com.satoshogoJapaneseChineseEnlishPaid store.p12",
+       "pfx": "/Users/arata1972/Documents/iPhoneP12/com.satoshogo.SimplePinyin store.p12",
+        "pfx": "/Users/arata1972/Documents/iPhoneP12/com.arata1972.SimpleChinesePinyin store.p12",
+        "bundleId": "com.arata1972.SimpleChinesePinyin",
+       "bundleId": "com.satoshogo.SimplePinyin",
+      "bundleId": "com.satoshogoTranslate-Chinese",
+      "bundleId": "com.satoshogoChinesePro",
+      "bundleId": "com.satoshogoJapaneseChineseEnlishPaid"
     }
        
     }

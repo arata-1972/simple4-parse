@@ -27,16 +27,9 @@ var api = new ParseServer({
       apiKey:"GCMのAPI KEY"
     },
     ios: {
-      pfx: "/Users/arata1972/Documents/iPhoneP12/com.satoshogoTranslate-Chinese store.p12",
-      pfx: "/Users/arata1972/Documents/iPhoneP12/com.satoshogoChinesePro store.p12",
-      pfx: "/Users/arata1972/Documents/iPhoneP12/com.satoshogoJapaneseChineseEnlishPaid store.p12",
-      pfx: "/Users/arata1972/Documents/iPhoneP12/com.satoshogo.SimplePinyin store.p12",
       pfx: "/Users/arata1972/Documents/iPhoneP12/com.arata1972.SimpleChinesePinyin store.p12",
-      bundleId: "com.arata1972.SimpleChinesePinyin",
       bundleId: "com.satoshogo.SimplePinyin",
-      bundleId: "com.satoshogoTranslate-Chinese",
-      bundleId: "com.satoshogoChinesePro",
-      bundleId: "com.satoshogoJapaneseChineseEnlishPaid"
+     production:false
     }
        
     }

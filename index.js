@@ -30,7 +30,7 @@ var api = new ParseServer({
       pfx: "com.satoshogo.SimplePinyin store.p12",
       bundleId: "com.satoshogo.SimplePinyin",
       bundleId: "com.arata1972.SimpleChinesePinyin"
-     production:true
+     //production:true
     }
        
     }

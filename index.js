@@ -27,6 +27,8 @@ var api = new ParseServer({
     },
     ios: {
       pfx: "com.arata1972.SimpleChinesePinyin store.p12",
+      pfx: "com.satoshogo.SimplePinyin store.p12",
+      bundleId: "com.arata1972.SimpleChinesePinyin",
       bundleId: "com.satoshogo.SimplePinyin",
      production:true
     }

@@ -27,7 +27,7 @@ var api = new ParseServer({
       apiKey:"GCMのAPI KEY"
     },
     ios: {
-      pfx: "/Users/arata1972/Documents/iPhoneP12/com.arata1972.SimpleChinesePinyin store.p12",
+      pfx: "com.arata1972.SimpleChinesePinyin store.p12",
       bundleId: "com.satoshogo.SimplePinyin",
      production:true
     }

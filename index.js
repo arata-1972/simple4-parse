@@ -29,7 +29,7 @@ var api = new ParseServer({
     ios: {
       pfx: "com.arata1972.japanese.chinese.dict store.p12",
       bundleId: "com.arata1972.japanese.chinese.dict",
-     production:true
+     //production:true
     }
        
     }

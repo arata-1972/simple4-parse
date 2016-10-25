@@ -19,13 +19,13 @@ var api = new ParseServer({
    push: {
       ios: [
               {
-                pfx:'/iPhoneP12/com.arata1972.SimpleChinesePinyin store.p12', // Dev PFX or P12
-                bundleId: 'com.satoshogo.SimplePinyin',
+                pfx:'/iPhoneP12/com.satoshogoTranslate-Chinese store.p12', // Dev PFX or P12
+                bundleId: 'com.satoshogoTranslate-Chinese',
                 production: false // Dev
               },
               {
-                pfx:'/iPhoneP12/com.arata1972.SimpleChinesePinyin store.p12', // Prod PFX or P12
-                bundleId: 'com.satoshogo.SimplePinyin',  
+                pfx:'/iPhoneP12/com.satoshogoTranslate-Chinese store.p12', // Prod PFX or P12
+                bundleId: 'com.satoshogoTranslate-Chinese',  
                 production: true // Prod
               }
             ]

@@ -12,15 +12,29 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-  databaseURI: databaseUri || 'mongodb://heroku_dcx5blwh:f36vpsol525964ln1k9hnmg0l7@ds021333.mlab.com:21333/heroku_dcx5blwh/dev',
+  databaseURI: databaseUri || 'mongodb://heroku_rkkf2ws6:h56hgokgqji34bnqfc00stmksq@ds011775.mlab.com:11775/heroku_rkkf2ws6/dev',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
-  appId: process.env.APP_ID || 'JpFnIiI7QA3IBAUKdQgzMAhzyWZUxWtAqNOCbfR8',
-  masterKey: process.env.MASTER_KEY || 'NpTjMfbWlzM7nGPcqymSIeXJtVJ9ZBwwoQXTRwd5', //Add your master key here. Keep it secret!
-  clientKey: 'GsdUwMBLkLnRquGXu6HqJP2wNeWljfCaFyhgYbaI', 
-  serverURL: process.env.SERVER_URL || 'https://japanese-chinese-dictionary.herokuapp.com/parse',  // Don't forget to change to https if needed
+  appId: process.env.APP_ID || '7iQswl5kOnrXyXR6xSp7YL795QXRTauY7tMAZp9Y',
+  masterKey: process.env.MASTER_KEY || 'r2NaBd3Sdcb82h5cfF5NajrvgxoJiJBdchW2NM0x', //Add your master key here. Keep it secret!
+   push: {
+      ios: [
+              {
+                pfx:'/iPhoneP12/com.arata1972.SimpleChinesePinyin store.p12', // Dev PFX or P12
+                bundleId: 'com.satoshogo.SimplePinyin',
+                production: false // Dev
+              },
+              {
+                pfx:'/iPhoneP12/com.arata1972.SimpleChinesePinyin store.p12', // Prod PFX or P12
+                bundleId: 'com.satoshogo.SimplePinyin',  
+                production: true // Prod
+              }
+            ]
+    },
+  serverURL: process.env.SERVER_URL || 'https://japanese-chinese.herokuapp.com/parse',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   }
+});
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
 // If you wish you require them, you can set them as options in the initialization above:

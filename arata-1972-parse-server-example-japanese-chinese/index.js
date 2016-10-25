@@ -16,23 +16,24 @@ var api = new ParseServer({
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || '7iQswl5kOnrXyXR6xSp7YL795QXRTauY7tMAZp9Y',
   masterKey: process.env.MASTER_KEY || 'r2NaBd3Sdcb82h5cfF5NajrvgxoJiJBdchW2NM0x', //Add your master key here. Keep it secret!
-  clientKey: 'Ti3A8p159Ehbdh68Sg9RSn5gx9mkVzFmmVdaVmCz', 
+   push: {
+      ios: [
+              {
+                pfx:'com.arata1972.SimpleChinesePinyin store.p12', // Dev PFX or P12
+                bundleId: 'com.satoshogo.SimplePinyin',
+                production: false // Dev
+              },
+              {
+                pfx:'com.arata1972.SimpleChinesePinyin store.p12', // Prod PFX or P12
+                bundleId: 'com.satoshogo.SimplePinyin',  
+                production: true // Prod
+              }
+            ]
+    },
   serverURL: process.env.SERVER_URL || 'https://japanese-chinese.herokuapp.com/parse',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
-  },
-     push: {
-    android: {
-      senderId: "GCMのSender-ID",
-      apiKey:"GCMのAPI KEY"
-    },
-    ios: {
-      pfx: "/Users/arata1972/Documents/iPhoneP12/com.arata1972.SimpleChinesePinyin store.p12",
-      bundleId: "com.satoshogo.SimplePinyin",
-     production:true
-    }
-       
-    }
+  }
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
 // If you wish you require them, you can set them as options in the initialization above:

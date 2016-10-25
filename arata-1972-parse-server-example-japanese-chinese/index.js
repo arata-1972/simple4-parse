@@ -19,12 +19,12 @@ var api = new ParseServer({
    push: {
       ios: [
               {
-                pfx:'com.arata1972.SimpleChinesePinyin store.p12', // Dev PFX or P12
+                pfx:'/iPhoneP12/com.arata1972.SimpleChinesePinyin store.p12', // Dev PFX or P12
                 bundleId: 'com.satoshogo.SimplePinyin',
                 production: false // Dev
               },
               {
-                pfx:'com.arata1972.SimpleChinesePinyin store.p12', // Prod PFX or P12
+                pfx:'/iPhoneP12/com.arata1972.SimpleChinesePinyin store.p12', // Prod PFX or P12
                 bundleId: 'com.satoshogo.SimplePinyin',  
                 production: true // Prod
               }

@@ -11,7 +11,7 @@ if (!databaseUri) {
   console.log('DATABASE_URI not specified, falling back to localhost.');
 }
 
-varvar api = new ParseServer({
+var api = new ParseServer({
   databaseURI: databaseUri || 'mongodb://heroku_rkkf2ws6:h56hgokgqji34bnqfc00stmksq@ds011775.mlab.com:11775/heroku_rkkf2ws6',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || '7iQswl5kOnrXyXR6xSp7YL795QXRTauY7tMAZp9Y',
@@ -29,8 +29,8 @@ varvar api = new ParseServer({
     // },
     ios: {
       pfx: __dirname + '/iPhone12/com.satoshogoTranslate-Chinese store.p12', // 與 index.js 目錄同層
-      bundleId: 'com.satoshogoTranslate-Chinese',// 填入先前填的 Bundle ID
-      production: true // false: development, true: production
+      bundleId: 'com.satoshogoTranslate-Chinese'// 填入先前填的 Bundle ID
+ 
     }
   }
 });

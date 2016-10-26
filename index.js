@@ -29,7 +29,8 @@ varvar api = new ParseServer({
     // },
     ios: {
       pfx: __dirname + '/iPhone12/com.satoshogoTranslate-Chinese store.p12', // 與 index.js 目錄同層
-      bundleId: 'com.satoshogoTranslate-Chinese' // 填入先前填的 Bundle ID
+      bundleId: 'com.satoshogoTranslate-Chinese',// 填入先前填的 Bundle ID
+      production: true // false: development, true: production
     }
   }
 });

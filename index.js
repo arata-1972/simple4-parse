@@ -12,26 +12,13 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-  databaseURI: databaseUri || 'mongodb://heroku_rkkf2ws6:h56hgokgqji34bnqfc00stmksq@ds011775.mlab.com:11775/heroku_rkkf2ws6',
+  databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
-  appId: process.env.APP_ID || '7iQswl5kOnrXyXR6xSp7YL795QXRTauY7tMAZp9Y',
-  masterKey: process.env.MASTER_KEY || 'r2NaBd3Sdcb82h5cfF5NajrvgxoJiJBdchW2NM0x', //Add your master key here. Keep it secret!
-  serverURL: process.env.SERVER_URL || 'https://japanese-chinese.herokuapp.com/parse',  // Don't forget to change to https if needed
+  appId: process.env.APP_ID || 'myAppId',
+  masterKey: process.env.MASTER_KEY || '', //Add your master key here. Keep it secret!
+  serverURL: process.env.SERVER_URL || 'http://localhost:1337/parse',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
-  },
-  // 以下為新增部分
-  push: {
-    // 此篇未提到 Android，因此註解掉
-    // android: {
-    //   senderId: '...',
-    //   apiKey: '...'
-    // },
-    ios: {
-      pfx:'/iPhone12/com.satoshogoTranslate-Chinese store.p12', // 與 index.js 目錄同層
-      bundleId: 'com.satoshogoTranslate-Chinese', // 填入先前填的 Bundle ID
-      production: true // false: development, true: production
-    }
   }
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server

@@ -19,6 +19,19 @@ var api = new ParseServer({
   serverURL: process.env.SERVER_URL || 'https://japanese-chinese.herokuapp.com/parse',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
+  }},
+  // 以下為新增部分
+  push: {
+    // 此篇未提到 Android，因此註解掉
+    // android: {
+    //   senderId: '...',
+    //   apiKey: '...'
+    // },
+    ios: {
+      pfx: 'pushDevelopmentCertificate.p12', // 與 index.js 目錄同層
+      bundleId: 'com.pushTest', // 填入先前填的 Bundle ID
+      production: false // false: development, true: production
+    }
   }
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server

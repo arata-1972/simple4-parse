@@ -19,7 +19,7 @@ var api = new ParseServer({
   serverURL: process.env.SERVER_URL || 'https://japanese-chinese.herokuapp.com/parse',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
-  }},
+  },
   // 以下為新增部分
   push: {
     // 此篇未提到 Android，因此註解掉

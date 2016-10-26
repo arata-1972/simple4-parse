@@ -28,9 +28,9 @@ var api = new ParseServer({
     //   apiKey: '...'
     // },
     ios: {
-      pfx: 'pushDevelopmentCertificate.p12', // 與 index.js 目錄同層
-      bundleId: 'com.pushTest', // 填入先前填的 Bundle ID
-      production: false // false: development, true: production
+      pfx: '/iPhone12/com.satoshogoTranslate-Chinese store.p12', // 與 index.js 目錄同層
+      bundleId: 'com.satoshogoTranslate-Chinese', // 填入先前填的 Bundle ID
+      production: true // false: development, true: production
     }
   }
 });

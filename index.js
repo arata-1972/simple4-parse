@@ -29,8 +29,8 @@ var api = new ParseServer({
     // },
     ios: {
       pfx:  __dirname + '/iPhone12/com.arata1972.japanese.spanish.dict.p12', // 與 index.js 目錄同層
-      bundleId: 'com.arata1972.japanese.spanish.dict', // 填入先前填的 Bundle ID
-      production: true // false: development, true: production
+      bundleId: 'com.arata1972.japanese.spanish.dict' // 填入先前填的 Bundle ID
+      // false: development, true: production
     }
   }
 });

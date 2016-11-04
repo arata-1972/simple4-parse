@@ -12,13 +12,26 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-  databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
+  databaseURI: databaseUri || 'mongodb://heroku_m0t8c028:fsmrvbtoq7a789lr7m2kfvj6de@ds031157.mlab.com:31157/heroku_m0t8c028',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
-  appId: process.env.APP_ID || 'myAppId',
-  masterKey: process.env.MASTER_KEY || '', //Add your master key here. Keep it secret!
-  serverURL: process.env.SERVER_URL || 'http://localhost:1337/parse',  // Don't forget to change to https if needed
+  appId: process.env.APP_ID || 'kucok7cmperlkewrsq6ghgx5vor84ghgbyqju0hc',
+  masterKey: process.env.MASTER_KEY || 'wv2i8p38407ftw2d4i847ltbyx9w8k0pse5t4aix', //Add your master key here. Keep it secret!
+  serverURL: process.env.SERVER_URL || 'https://japanese-spanish-dictionary.herokuapp.com/parse',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
+  },
+  // 以下為新增部分
+  push: {
+    // 此篇未提到 Android，因此註解掉
+    // android: {
+    //   senderId: '...',
+    //   apiKey: '...'
+    // },
+    ios: {
+      pfx:  __dirname + '/iPhone12/com.arata1972.japanese.spanish.dict.p12', // 與 index.js 目錄同層
+      bundleId: 'com.arata1972.night.market', // 填入先前填的 Bundle ID
+      production: true // false: development, true: production
+    }
   }
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server

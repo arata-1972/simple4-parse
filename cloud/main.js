@@ -16,6 +16,6 @@ Parse.Cloud.define('elementsBaidu', function(req, res) {
 });
 
 Parse.Cloud.define('gElements', function(req, res) {
- res.success('document.getElementsByClassName(<ordinary-output target-output clearfix>)[0].innerText');
+ res.success('document.getElementsByClassName(<translation>)[0].innerHTML');
 });
 

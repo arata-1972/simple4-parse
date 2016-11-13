@@ -28,7 +28,7 @@ var api = new ParseServer({
     //   apiKey: '...'
     // },
     ios: {
-      pfx:  __dirname + '/iPhone12/com.arata1972.night.market.store.p12', // 與 index.js 目錄同層
+      pfx:  __dirname + '/iPhoneP12/com.arata1972.night.market.store.p12', // 與 index.js 目錄同層
       bundleId: 'com.arata1972.night.market', // 填入先前填的 Bundle ID
       production: false // false: development, true: production
     }

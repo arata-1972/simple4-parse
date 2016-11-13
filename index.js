@@ -57,6 +57,11 @@ var api = new ParseServer({
 	        pfx: __dirname + '/iPhoneP12/com.satoshogoJapaneseChineseEnlishPaid store.p12', 
 	        bundleId: 'com.satoshogoJapaneseChineseEnlishPaid',  
 	        production: true
+	      },
+		{
+	        pfx: __dirname + '/iPhoneP12/com.satoshogoJapaneseChineseEnlish store.p12', 
+	        bundleId: 'com.satoshogoJapaneseChineseEnlish',  
+	        production: true
 	      }
 	       ]
 	  },

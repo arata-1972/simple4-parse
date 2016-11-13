@@ -12,31 +12,55 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-  databaseURI: databaseUri || 'mongodb://heroku_mzh9z7fj:2biadrg17pg08u1e1p1qvqa7jt@ds023432.mlab.com:23432/heroku_mzh9z7fj',
-  cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
-  appId: process.env.APP_ID || 'PJGh686wADXdRboLLmbkER0V4D95wlLVatRJXUl0',
-  masterKey: process.env.MASTER_KEY || '4t5Y7WU5lShBRzNz4SeT1gbXxqfABGRvH0T8bL3c', //Add your master key here. Keep it secret!
-  serverURL: process.env.SERVER_URL || 'https://night-market--taiwan.herokuapp.com/parse',  // Don't forget to change to https if needed
-  liveQuery: {
-    classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
-  },
-  // 以下為新增部分
-  push: {
-    // 此篇未提到 Android，因此註解掉
-    // android: {
-    //   senderId: '...',
-    //   apiKey: '...'
-    // },
-    ios: {
-      pfx:  __dirname + '/iPhoneP12/com.arata1972.night.market.store.p12', // 與 index.js 目錄同層
-      bundleId: 'com.arata1972.night.market', // 填入先前填的 Bundle ID
-      production: true // false: development, true: production
-    }
-  }
-});
-
-
-
+	  databaseURI: databaseUri || 'mongodb://heroku_rkkf2ws6:h56hgokgqji34bnqfc00stmksq@ds011775.mlab.com:11775/heroku_rkkf2ws6',
+	  cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
+	  appId: process.env.APP_ID || '7iQswl5kOnrXyXR6xSp7YL795QXRTauY7tMAZp9Y',
+	  masterKey: process.env.MASTER_KEY || 'r2NaBd3Sdcb82h5cfF5NajrvgxoJiJBdchW2NM0x', //Add your master key here. Keep it secret!
+	  serverURL: process.env.SERVER_URL || 'https://japanese-chinese.herokuapp.com/parse',  // Don't forget to change to https if needed
+	  liveQuery: {
+	    classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
+	  },
+	  // 以下為新增部分
+	  push: {
+	    // 此篇未提到 Android，因此註解掉
+	    // android: {
+	    //   senderId: '...',
+	    //   apiKey: '...'
+	    // },
+	    ios:[
+	      {
+	        pfx: __dirname + '/iPhoneP12/com.satoshogoTranslate-Chinese store.p12',
+	        bundleId: 'com.satoshogoTranslate-Chinese',
+	        production: true
+	      },
+	      {
+	        pfx: __dirname + '/iPhoneP12/com.satoshogoChinesePro store.p12', 
+	        bundleId: 'com.satoshogoChinesePro',  
+	        production: true
+	      },
+	      {
+	        pfx: __dirname + '/iPhoneP12/com.satoshogoJapaneseChineseEnlishPaid store.p12', 
+	        bundleId: 'com.satoshogoJapaneseChineseEnlishPaid',  
+	        production: true
+	      },
+	      {
+	        pfx: __dirname + '/iPhoneP12/com.satoshogo.SimplePinyin store.p12', 
+	        bundleId: 'com.satoshogo.SimplePinyin',  
+	        production: true
+	      },
+	      {
+	        pfx: __dirname + '/iPhoneP12/com.arata1972.SimpleChinesePinyin store.p12', 
+	        bundleId: 'com.arata1972.SimpleChinesePinyin',  
+	        production: true
+	      },
+	      {
+	        pfx: __dirname + '/iPhoneP12/com.satoshogoJapaneseChineseEnlishPaid store.p12', 
+	        bundleId: 'com.satoshogoJapaneseChineseEnlishPaid',  
+	        production: true
+	      }
+	       ]
+	  },
+	});
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
 // If you wish you require them, you can set them as options in the initialization above:
 // javascriptKey, restAPIKey, dotNetKey, clientKey

@@ -39,11 +39,6 @@ var api = new ParseServer({
 	        production: true
 	      },
 	      {
-	        pfx: __dirname + '/iPhoneP12/com.satoshogoJapaneseChineseEnlishPaid store.p12', 
-	        bundleId: 'com.satoshogoJapaneseChineseEnlishPaid',  
-	        production: true
-	      },
-	      {
 	        pfx: __dirname + '/iPhoneP12/com.satoshogo.SimplePinyin store.p12', 
 	        bundleId: 'com.satoshogo.SimplePinyin',  
 	        production: true

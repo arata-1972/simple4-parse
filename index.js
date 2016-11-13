@@ -19,19 +19,6 @@ var api = new ParseServer({
   serverURL: process.env.SERVER_URL || 'https://night-market--taiwan.herokuapp.com/parse',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
-  },
-  // 以下為新增部分
-  push: {
-    // 此篇未提到 Android，因此註解掉
-    // android: {
-    //   senderId: '...',
-    //   apiKey: '...'
-    // },
-    ios: {
-      pfx:  __dirname + '/iPhone12/com.arata1972.night.market.store.p12', // 與 index.js 目錄同層
-      bundleId: 'com.arata1972.night.market', // 填入先前填的 Bundle ID
-      production: true // false: development, true: production
-    }
   }
 });
 

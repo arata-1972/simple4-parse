@@ -12,11 +12,11 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-	  databaseURI: databaseUri || 'mongodb://heroku_rkkf2ws6:h56hgokgqji34bnqfc00stmksq@ds011775.mlab.com:11775/heroku_rkkf2ws6',
+	  databaseURI: databaseUri || 'mongodb://heroku_xwr55ctd:jptobi1jo8dsuvrg7r05899nto@ds027215.mlab.com:27215/heroku_xwr55ctd',
 	  cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
-	  appId: process.env.APP_ID || '7iQswl5kOnrXyXR6xSp7YL795QXRTauY7tMAZp9Y',
-	  masterKey: process.env.MASTER_KEY || 'r2NaBd3Sdcb82h5cfF5NajrvgxoJiJBdchW2NM0x', //Add your master key here. Keep it secret!
-	  serverURL: process.env.SERVER_URL || 'https://japanese-chinese.herokuapp.com/parse',  // Don't forget to change to https if needed
+	  appId: process.env.APP_ID || 'hyHA6CZ4BqzMXKy4JUYKGus0NYJNNXRFY2Zkz9ny',
+	  masterKey: process.env.MASTER_KEY || '2FSrqlKV7SfhsXUBNuSu3PbkgLY8vXSwFzjOJSdD', //Add your master key here. Keep it secret!
+	  serverURL: process.env.SERVER_URL || 'https://japanese-english.herokuapp.com/parse',  // Don't forget to change to https if needed
 	  liveQuery: {
 	    classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
 	  },
@@ -29,8 +29,8 @@ var api = new ParseServer({
 	    // },
 	    ios:[
 	      {
-	        pfx: __dirname + '/iPhoneP12/com.satoshogoTranslate-Chinese store.p12',
-	        bundleId: 'com.satoshogoTranslate-Chinese',
+	        pfx: __dirname + '/iPhoneP12/com.satoshogoTranslate-English store.p12',
+	        bundleId: 'com.satoshogoTranslate-English',
 	        production: true
 	      },
 	      {

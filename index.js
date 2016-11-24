@@ -34,27 +34,27 @@ var api = new ParseServer({
 	        production: true
 	      },
 	      {
-	        pfx: __dirname + '/iPhoneP12/com.satoshogoChinesePro store.p12', 
-	        bundleId: 'com.satoshogoChinesePro',  
+	        pfx: __dirname + '/iPhoneP12/om.satoshogoDictApp store.p12', 
+	        bundleId: 'om.satoshogoDictApp',  
 	        production: true
 	      },
 	      {
-	        pfx: __dirname + '/iPhoneP12/com.satoshogo.SimplePinyin store.p12', 
-	        bundleId: 'com.satoshogo.SimplePinyin',  
+	        pfx: __dirname + '/iPhoneP12/com.satoshogoJapaneseEnglishPro store.p12', 
+	        bundleId: 'com.satoshogoJapaneseEnglishPro',  
 	        production: true
 	      },
 	      {
-	        pfx: __dirname + '/iPhoneP12/com.arata1972.SimpleChinesePinyin store.p12', 
-	        bundleId: 'com.arata1972.SimpleChinesePinyin',  
+	        pfx: __dirname + '/iPhoneP12/com.satoshogoTranslateSwedish store.p12', 
+	        bundleId: 'com.satoshogoTranslateSwedish',  
 	        production: true
 	      },
 	      {
-	        pfx: __dirname + '/iPhoneP12/com.satoshogoJapaneseChineseEnlishPaid store.p12', 
+	        pfx: __dirname + '/iPhoneP12/com.satoshogoTranslateHindi store.p12', 
 	        bundleId: 'com.satoshogoJapaneseChineseEnlishPaid',  
 	        production: true
 	      },
 		{
-	        pfx: __dirname + '/iPhoneP12/com.arata1972.SimpleHiragana store.p12', 
+	        pfx: __dirname + '/iPhoneP12/com.satoshogoDenmark store.p12', 
 	        bundleId: 'com.arata1972.SimpleHiragana',  
 	        production: true
 	      },

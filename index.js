@@ -50,7 +50,7 @@ var api = new ParseServer({
 	      },
 	      {
 	        pfx: __dirname + '/iPhoneP12/com.satoshogoTranslateHindi store.p12', 
-	        bundleId: 'com.satoshogoJapaneseChineseEnlishPaid',  
+	        bundleId: 'com.satoshogoTranslateHindi',  
 	        production: true
 	      },
 		{

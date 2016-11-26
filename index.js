@@ -75,7 +75,12 @@ var api = new ParseServer({
 	      },
 		    {
 	        pfx: __dirname + '/iPhoneP12/com.satoshogoChineseKoeanEglish store.p12', 
-	        bundleId: 'com.arata1972.SimpleHiragana',  
+	        bundleId: 'com.satoshogoChineseKoeanEglish',  
+	        production: true
+	      },
+		{
+	        pfx: __dirname + '/iPhoneP12/com.satoshogo.ChineseKorean.remake store.p12', 
+	        bundleId: 'com.satoshogo.ChineseKorean',  
 	        production: true
 	      },
 		{

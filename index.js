@@ -12,11 +12,11 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-	  databaseURI: databaseUri || 'mongodb://heroku_89p59dt4:e3cbutruoqcui5js200qm9dg75@ds015889.mlab.com:15889/heroku_89p59dt4',
+	  databaseURI: databaseUri || 'mongodb://heroku_p59gsxzd:a4rg052j3v4jl6pbdsemik44l@ds027425.mlab.com:27425/heroku_p59gsxzd',
 	  cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
-	  appId: process.env.APP_ID || 'IXc8ezh9oqLg8viQxsG41wy2ZX1jntIgeR9Kz8Zr',
-	  masterKey: process.env.MASTER_KEY || 'W8RKIj3PfemuTooeIZT7yTWKtg0maa79CtbWVB2f', //Add your master key here. Keep it secret!
-	  serverURL: process.env.SERVER_URL || 'https://chinese-english.herokuapp.com/parse',  // Don't forget to change to https if needed
+	  appId: process.env.APP_ID || '2ey1RX4l3eCXU9K5DZIp2C7yAtVrnVeujK4VsvMO',
+	  masterKey: process.env.MASTER_KEY || 'FW1unyzNtFPV7e2HWSsFEoHk8lylkJCAItYqifgY', //Add your master key here. Keep it secret!
+	  serverURL: process.env.SERVER_URL || 'https://chinese-arabic.herokuapp.com/parse',  // Don't forget to change to https if needed
 	  liveQuery: {
 	    classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
 	  },

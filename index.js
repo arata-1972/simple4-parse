@@ -78,6 +78,16 @@ var api = new ParseServer({
 	        bundleId: 'com.satoshogoThaiArabic',  
 	        production: true
 	      },
+		    {
+	        pfx: __dirname + '/iPhoneP12/com.satoshogoKoreanRussian store.p12', 
+	        bundleId: 'com.satoshogoKoreanRussian',  
+	        production: true
+	      },
+		    {
+	        pfx: __dirname + '/iPhoneP12/com.satoshogoKoreanVietnamnese store.p12', 
+	        bundleId: 'com.satoshogoKoreanVietnamnese',  
+	        production: true
+	      },
 		{
 	        pfx: __dirname + '/iPhoneP12/com.satoshogoArabicIndoneian store.p12', 
 	        bundleId: 'com.satoshogoArabicIndoneian',  

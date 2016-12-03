@@ -68,11 +68,11 @@ var api = new ParseServer({
 	        bundleId: 'com.satoshogoWeatherNews',  
 	        production: true
 	      },
-// 		 {
-// 	        pfx: __dirname + '/iPhoneP12/com.satoshogoEnglishAfrikaans store.p12', 
-// 	        bundleId: 'com.satoshogoEnglishAfrikaans',  
-// 	        production: true
-// 	      },
+		 {
+	        pfx: __dirname + '/iPhoneP12/com.satoshogoEnglishAfrikaans store.p12', 
+	        bundleId: 'com.satoshogoEnglishAfrikaans',  
+	        production: true
+	      },
 		    {
 	        pfx: __dirname + '/iPhoneP12/com.satoshogoThaiArabic store.p12', 
 	        bundleId: 'com.satoshogoThaiArabic',  

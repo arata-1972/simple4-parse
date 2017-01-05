@@ -29,33 +29,33 @@ var api = new ParseServer({
 	    // },
 	    ios:[
 	      {
-	        pfx: __dirname + '/iPhoneP12/com.satoshogo.SimpleKoreanChinese store.p12',
-	        bundleId: 'com.satoshogo.SimpleKoreanChinese',
+	        pfx: __dirname + '/iPhoneP12/com.satoshogo.SimplePersianGerman store.p12',
+	        bundleId: 'com.satoshogo.SimplePersianGerman',
 	        production: true
 	      },
 		    {
-	        pfx: __dirname + '/iPhoneP12/com.satoshogo.SimpleVietChinese store.p12',
-	        bundleId: 'com.satoshogo.SimpleVietChinese',
+	        pfx: __dirname + '/iPhoneP12/com.satoshogo.SimpleEnglishPersian store.p12',
+	        bundleId: 'com.satoshogo.SimpleEnglishPersian',
 	        production: true
 	      },
 		    {
-	        pfx: __dirname + '/iPhoneP12/com.satoshogo.SimpleEnglishChinese store.p12',
-	        bundleId: 'com.satoshogo.SimpleEnglishChinese',
+	        pfx: __dirname + '/iPhoneP12/com.satoshogo.SimpleJapaneseIndonesian store.p12',
+	        bundleId: 'com.satoshogo.SimpleJapaneseIndonesian',
 	        production: true
 	      },
 		    {
-	        pfx: __dirname + '/iPhoneP12/com.satoshogo.SimpleThaiChinese20160611 store.p12',
-	        bundleId: 'com.satoshogo.SimpleThaiChinese20160611',
+	        pfx: __dirname + '/iPhoneP12/com.satoshogo.SimpleRussianChinese store.p12',
+	        bundleId: 'com.satoshogo.SimpleRussianChinese',
 	        production: true
 	      },
 		    {
-	        pfx: __dirname + '/iPhoneP12/com.satoshogo.SimpleJapaneseChinese store.p12',
-	        bundleId: 'com.satoshogo.SimpleJapaneseChinese',
+	        pfx: __dirname + '/iPhoneP12/com.satoshogo.SimpleJapaneseFrench store.p12',
+	        bundleId: 'com.satoshogo.SimpleJapaneseFrench',
 	        production: true
 	      },
 	  {
-		pfx: __dirname + '/iPhoneP12/com.satoshogo.SimpleJapaneseEnglish store.p12', 
-	        bundleId: 'com.satoshogo.SimpleJapaneseEnglish',  
+		pfx: __dirname + '/iPhoneP12/com.satoshogo.SimpleJapaneseGerman store.p12', 
+	        bundleId: 'com.satoshogo.SimpleJapaneseGerman',  
 	        production: true
 	      }
 	       ]

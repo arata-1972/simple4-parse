@@ -29,78 +29,13 @@ var api = new ParseServer({
 	    // },
 	    ios:[
 	      {
-	        pfx: __dirname + '/iPhoneP12/com.satoshogoEnglish-vietnam store.p12',
-	        bundleId: 'com.satoshogoEnglish-vietnam',
+	        pfx: __dirname + '/iPhoneP12/com.satoshogo.EnglishPersian store.p12',
+	        bundleId: 'com.satoshogo.EnglishPersian',
 	        production: true
 	      },
-	      {
-	        pfx: __dirname + '/iPhoneP12/com.satoshogoEngishRussan store.p12', 
-	        bundleId: 'com.satoshogoEngishRussan',  
-	        production: true
-	      },
-	      {
-	        pfx: __dirname + '/iPhoneP12/com.satoshogoEnglishHebrew store.p12', 
-	        bundleId: 'com.satoshogoEnglishHebrew',  
-	        production: true
-	      },
-	      {
-	        pfx: __dirname + '/iPhoneP12/com.satoshogoEngishTurkey store.p12', 
-	        bundleId: 'com.satoshogoEngishTurkey',  
-	        production: true
-	      },
-	      {
-	        pfx: __dirname + '/iPhoneP12/com.satoshogoEnglishFrench store.p12', 
-	        bundleId: 'com.satoshogoEnglishFrench',  
-	        production: true
-	      },
-		{
-	        pfx: __dirname + '/iPhoneP12/com.satoshogoEnglishVietnamnese store.p12', 
-	        bundleId: 'com.satoshogoEnglishVietnamnese',  
-	        production: true
-	      },
-// 		{
-// 	        pfx: __dirname + '/iPhoneP12/com.satoshogo.EnglishArabic.remake store.p12', 
-// 	        bundleId: 'com.satoshogo.EnglishArabic.remake',  
-// 	        production: true
-// 	      },
-		{
-	        pfx: __dirname + '/iPhoneP12/com.satoshogoWeatherNews store.p12', 
-	        bundleId: 'com.satoshogoWeatherNews',  
-	        production: true
-	      },
-// 		 {
-// 	        pfx: __dirname + '/iPhoneP12/com.satoshogoEnglishAfrikaans store.p12', 
-// 	        bundleId: 'com.satoshogoEnglishAfrikaans',  
-// 	        production: true
-// 	      },
-		    {
-	        pfx: __dirname + '/iPhoneP12/com.satoshogoThaiArabic store.p12', 
-	        bundleId: 'com.satoshogoThaiArabic',  
-	        production: true
-	      },
-		    {
-	        pfx: __dirname + '/iPhoneP12/com.satoshogoKoreanRussian store.p12', 
-	        bundleId: 'com.satoshogoKoreanRussian',  
-	        production: true
-	      },
-		{
-	        pfx: __dirname + '/iPhoneP12/com.satoshogoKoreanVietnamnese store.p12', 
-	        bundleId: 'com.satoshogoKoreanVietnamnese',  
-	        production: true
-	      },
-		{
-	        pfx: __dirname + '/iPhoneP12/com.satoshogoChineseArabicEglish store.p12', 
-	        bundleId: 'com.satoshogoChineseArabicEglish',  
-	        production: true
-	      },
-		{
-	        pfx: __dirname + '/iPhoneP12/com.satoshogoEnglishIndonesian store.p12', 
-	        bundleId: 'com.satoshogoEnglishIndonesian',  
-	        production: true
-	      },
-		{
-	        pfx: __dirname + '/iPhoneP12/com.satoshogoArabicIndoneian store.p12', 
-	        bundleId: 'com.satoshogoArabicIndoneian',  
+	  {
+	        pfx: __dirname + '/iPhoneP12/com.satoshogo.EnglishPersian.remake store.p12', 
+	        bundleId: 'com.satoshogo.EnglishPersian.remake',  
 	        production: true
 	      }
 	       ]

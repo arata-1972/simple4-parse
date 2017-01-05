@@ -29,33 +29,33 @@ var api = new ParseServer({
 	    // },
 	    ios:[
 	      {
-	        pfx: __dirname + '/iPhoneP12/com.satoshogo.SimplePersianGerman store.p12',
-	        bundleId: 'com.satoshogo.SimplePersianGerman',
+	        pfx: __dirname + '/iPhoneP12/com.satoshogo.SimpleJapaneseSpanish store.p12',
+	        bundleId: 'com.satoshogo.SimpleJapaneseSpanish',
 	        production: true
 	      },
 		    {
-	        pfx: __dirname + '/iPhoneP12/com.satoshogo.SimpleEnglishPersian store.p12',
-	        bundleId: 'com.satoshogo.SimpleEnglishPersian',
+	        pfx: __dirname + '/iPhoneP12/com.satoshogo.SimpleJapaneseItalian store.p12',
+	        bundleId: 'com.satoshogo.SimpleJapaneseItalian',
 	        production: true
 	      },
 		    {
-	        pfx: __dirname + '/iPhoneP12/com.satoshogo.SimpleJapaneseIndonesian store.p12',
-	        bundleId: 'com.satoshogo.SimpleJapaneseIndonesian',
+	        pfx: __dirname + '/iPhoneP12/com.satoshogo.SimpleJapanesePt store.p12',
+	        bundleId: 'com.satoshogo.SimpleJapanesePt',
 	        production: true
 	      },
 		    {
-	        pfx: __dirname + '/iPhoneP12/com.satoshogo.SimpleRussianChinese store.p12',
-	        bundleId: 'com.satoshogo.SimpleRussianChinese',
+	        pfx: __dirname + '/iPhoneP12/com.satoshogo.SimpleJapaneseRussian store.p12',
+	        bundleId: 'com.satoshogo.SimpleJapaneseRussian',
 	        production: true
 	      },
 		    {
-	        pfx: __dirname + '/iPhoneP12/com.satoshogo.SimpleJapaneseFrench store.p12',
-	        bundleId: 'com.satoshogo.SimpleJapaneseFrench',
+	        pfx: __dirname + '/iPhoneP12/com.satoshogo.SimpleEnglishSpanish store.p12',
+	        bundleId: 'com.satoshogo.SimpleEnglishSpanish',
 	        production: true
 	      },
 	  {
-		pfx: __dirname + '/iPhoneP12/com.satoshogo.SimpleJapaneseGerman store.p12', 
-	        bundleId: 'com.satoshogo.SimpleJapaneseGerman',  
+		pfx: __dirname + '/iPhoneP12/com.satoshogo.SimpleKoreanThai store.p12', 
+	        bundleId: 'com.satoshogo.SimpleKoreanThai',  
 	        production: true
 	      }
 	       ]

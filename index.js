@@ -29,33 +29,33 @@ var api = new ParseServer({
 	    // },
 	    ios:[
 	      {
-	        pfx: __dirname + '/iPhoneP12/com.satoshogo.EnglishPersian store.p12',
-	        bundleId: 'com.satoshogo.EnglishPersian',
+	        pfx: __dirname + '/iPhoneP12/com.satoshogo.SimpleKoreanChinese store.p12',
+	        bundleId: 'com.satoshogo.SimpleKoreanChinese',
 	        production: true
 	      },
 		    {
-	        pfx: __dirname + '/iPhoneP12/com.satoshogo.EnglishPersian store.p12',
-	        bundleId: 'com.satoshogo.EnglishPersian',
+	        pfx: __dirname + '/iPhoneP12/com.satoshogo.SimpleVietChinese store.p12',
+	        bundleId: 'com.satoshogo.SimpleVietChinese',
 	        production: true
 	      },
 		    {
-	        pfx: __dirname + '/iPhoneP12/com.satoshogo.EnglishPersian store.p12',
-	        bundleId: 'com.satoshogo.EnglishPersian',
+	        pfx: __dirname + '/iPhoneP12/com.satoshogo.SimpleEnglishChinese store.p12',
+	        bundleId: 'com.satoshogo.SimpleEnglishChinese',
 	        production: true
 	      },
 		    {
-	        pfx: __dirname + '/iPhoneP12/com.satoshogo.EnglishPersian store.p12',
-	        bundleId: 'com.satoshogo.EnglishPersian',
+	        pfx: __dirname + '/iPhoneP12/com.satoshogo.SimpleThaiChinese20160611 store.p12',
+	        bundleId: 'com.satoshogo.SimpleThaiChinese20160611',
 	        production: true
 	      },
 		    {
-	        pfx: __dirname + '/iPhoneP12/com.satoshogo.EnglishPersian store.p12',
-	        bundleId: 'com.satoshogo.EnglishPersian',
+	        pfx: __dirname + '/iPhoneP12/com.satoshogo.SimpleJapaneseChinese store.p12',
+	        bundleId: 'com.satoshogo.SimpleJapaneseChinese',
 	        production: true
 	      },
 	  {
-		pfx: __dirname + '/iPhoneP12/com.satoshogo.EnglishPersian.remake store.p12', 
-	        bundleId: 'com.satoshogo.EnglishPersian.remake',  
+		pfx: __dirname + '/iPhoneP12/com.satoshogo.SimpleJapaneseEnglish store.p12', 
+	        bundleId: 'com.satoshogo.SimpleJapaneseEnglish',  
 	        production: true
 	      }
 	       ]
